@@ -25,7 +25,7 @@ const xproCommit = new XproCommit();
 const commands = {
   config: () => xproCommit.config(),
   version: () => console.log(xproCommit.version(pkg.version)),
-  commit: () => xproCommit.ask('client'),
+  commit: () => xproCommit.run(),
   help: () => cli.showHelp()
 };
 
